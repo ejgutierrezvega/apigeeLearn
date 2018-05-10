@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PopulateCache async="false" continueOnError="false" enabled="true" name="PC-CacheSignature">
+    <!-- The cache to write to. -->
+    <CacheResource>signatureCache</CacheResource>
+    <!-- The source of the data, a variable containing the value. -->
+    <Source>request_signature</Source>
+    <!-- An enumeration representing a prefix for namespace scope. -->
+    <Scope>Exclusive</Scope>
+    <!-- A unique pointer (a flow variable value) to the data. Use this later to retrieve it. -->
+    <CacheKey>
+        <KeyFragment>RequestSignature</KeyFragment>
+        <KeyFragment ref="signature"/>
+    </CacheKey>
+    <!-- Entries placed into the cache with this policy will expire after 600 seconds. -->
+    <ExpirySettings>
+        <TimeoutInSec>600</TimeoutInSec>
+    </ExpirySettings>
+</PopulateCache>

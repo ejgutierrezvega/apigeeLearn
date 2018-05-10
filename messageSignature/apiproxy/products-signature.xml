@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="2" name="products-signature">
+    <Basepaths>/products-signature</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1524872555339</CreatedAt>
+    <CreatedBy>egutierrez@esurance.com</CreatedBy>
+    <Description>Products Information</Description>
+    <DisplayName>products-signature</DisplayName>
+    <LastModifiedAt>1525728216120</LastModifiedAt>
+    <LastModifiedBy>egutierrez@esurance.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:6404493f7e97abf02b7b18c3287a03efdd7bfe23e098cd74270ad04ff557e59d07550be8b55cc87cd38bb93a8714ec93bf605353c85d7a62f65ff0f6f00c3872</ManifestVersion>
+    <Policies>
+        <Policy>JS-ExtractApiKey</Policy>
+        <Policy>JS-SignMessage</Policy>
+        <Policy>LC-RequestSignature</Policy>
+        <Policy>OA-VerifyToken</Policy>
+        <Policy>PC-CacheSignature</Policy>
+        <Policy>RF-SignatureNotValid</Policy>
+        <Policy>remove-query-param-apikey</Policy>
+        <Policy>verify-api-key</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JS-ExtractApiKey.js</Resource>
+        <Resource>jsc://JS-SignMessage.js</Resource>
+        <Resource>jsc://crypto-js.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>

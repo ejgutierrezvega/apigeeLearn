@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="JS-ExtractApiKey" version="SHA-512:9273578def3e054d64e50c8c9d0b168ebb3283d31a6edb4e2a7ed92c878ed25b4c9a1a6bce0a7e5fe4db56ea52efeb225cd207dfc5c2ff125ad43bc70ee4ff09"/>
+        <VersionInfo resourceName="JS-SignMessage" version="SHA-512:b61d043c91ccfe7f4647279a235f9994d821d529e19b5b062c13196e2453db1d4bd7508418eb2434c779c63e2a3dae9cabca13a85a7b2455fbc77c60f28f38a8"/>
+        <VersionInfo resourceName="LC-RequestSignature" version="SHA-512:fd0ccecb669ff59f812d81fa6e3b8bcf84d542e125fb41f58c23ea6eb77b5dbacccbe0b2e9af70ae947686d5d91552addbe92cf9c440842700a7c45395a02514"/>
+        <VersionInfo resourceName="OA-VerifyToken" version="SHA-512:01dc51d6f8474004f928c538757913d059e915aabfe3fff9cd010bb3dedb24f5a8482410c2e94a7e0665aa7120398960a82e26539eb7bf149c68d6e0a1f42df0"/>
+        <VersionInfo resourceName="PC-CacheSignature" version="SHA-512:704329d90a44bad6d3f045ae28e2ba912b0f0707cb6e0f4fa22c87a4194ebd91875fe684e75899b9182890ecc9c8c9d88cccc31c2b29cd05972091e01fd61dc9"/>
+        <VersionInfo resourceName="RF-SignatureNotValid" version="SHA-512:c10fa41a8eb44b0ed75737233d869393fc9591f112fb9ab098bfcb4e886ed776441ef1aa9db2b10ab94d8daf39c5ef8583d072fff4798f6d286bdc33b7d9eb56"/>
+        <VersionInfo resourceName="remove-query-param-apikey" version="SHA-512:fedac28ff50d0bca86015a692d1b6e093718a7c700308eebb8b74c4b95a71815a7bc9dd92d2809176c881a6affe89177a87205bb9ae618083036394d199b3d05"/>
+        <VersionInfo resourceName="verify-api-key" version="SHA-512:df933f6e29fdff74f9b67c8d7dbf7c02f29e6a4853b846917caab4cc8fe074cfd74ef58d7df044459108b2feef2f8974de0ddbcedee1835e5506fa00418d5989"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:e60508b09f7164c47515fa871fde232221dc79a621e255cb2bfc1a812107044f8879a0ae61abf1e677e5be1cd30d5535a1bb1260bec298e542d69268dec5e9a5"/>
+    </ProxyEndpoints>
+    <Resources>
+        <VersionInfo resourceName="jsc://JS-ExtractApiKey.js" version="SHA-512:ac88696e882c380215e0f7bd0462a283b2028a0d7758965d675fdcf7f4082080591c92f427b377b82e3f824ef024454d61f51f0db404cda41a41b7d8ea2a5564"/>
+        <VersionInfo resourceName="jsc://JS-SignMessage.js" version="SHA-512:8b007fc775e946a1b8627e806468d2181bc4ccb7a699827e7dc7cdf82e439c916cc5b1a70dce755179b4541622af33c89797e0595712372696a21f97918d97ba"/>
+        <VersionInfo resourceName="jsc://crypto-js.js" version="SHA-512:2b7ef4614f32ae25c76795f6c8b1dd201c1945ae9a23bf9f2017d251a8e1e3e4505df3540d1d50ec53a09c617d04e13e7fec5dc60367bd467d5c8974abf3367c"/>
+        <VersionInfo resourceName="openapi://association.json" version="SHA-512:c0abe22df5f0e68a52f1cf656162b859a05af134d81f7d64e53a7dc7540d21f0a3cbe54fc88e6518f869d1582af653ffebdd93ce7f80546050c14bb51361ca63"/>
+    </Resources>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

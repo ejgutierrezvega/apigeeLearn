@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>JS-ExtractApiKey</Name>
+            </Step>
+            <Step>
+                <Name>verify-api-key</Name>
+            </Step>
+            <Step>
+                <Name>OA-VerifyToken</Name>
+            </Step>
+            <Step>
+                <Name>LC-RequestSignature</Name>
+            </Step>
+            <Step>
+                <Name>JS-SignMessage</Name>
+            </Step>
+            <Step>
+                <Name>RF-SignatureNotValid</Name>
+                <Condition>signature_validation_success = "false"</Condition>
+            </Step>
+            <Step>
+                <Name>PC-CacheSignature</Name>
+                <Condition>signature_validation_success = "true"</Condition>
+            </Step>
+        </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows>
+        <Flow name="Create New Product">
+            <Description>Create new product</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "POST")</Condition>
+        </Flow>
+        <Flow name="Get All Products">
+            <Description>Get All Product Details</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="Get Product">
+            <Description>Product Detail</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products/*") and (request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="Update Product">
+            <Description>Update Product</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products/*") and (request.verb = "PUT")</Condition>
+        </Flow>
+        <Flow name="Get Product Availability">
+            <Description>Product Availability</Description>
+            <Request/>
+            <Response/>
+            <Condition>(proxy.pathsuffix MatchesPath "/products/*/availability") and (request.verb = "GET")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/products-signature</BasePath>
+        <Properties/>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

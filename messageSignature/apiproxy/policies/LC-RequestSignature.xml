@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache async="false" continueOnError="false" enabled="true" name="LC-RequestSignature">
+    <DisplayName>LC-RequestSignature</DisplayName>
+    <CacheKey>
+        <KeyFragment>RequestSignature</KeyFragment>
+        <KeyFragment ref="request_signature"/>
+    </CacheKey>
+    <CacheResource>signatureCache</CacheResource>
+    <Scope>Exclusive</Scope>
+    <AssignTo>cache_signature</AssignTo>
+</LookupCache>

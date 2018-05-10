@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Javascript async="false" continueOnError="false" enabled="true" timeLimit="200" name="JS-SignMessage">
+    <DisplayName>JS-SignMessage</DisplayName>
+    <Properties/>
+    <IncludeURL>jsc://crypto-js.js</IncludeURL>
+    <ResourceURL>jsc://JS-SignMessage.js</ResourceURL>
+</Javascript>
