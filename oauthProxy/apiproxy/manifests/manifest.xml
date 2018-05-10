@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest name="manifest">
+    <Policies>
+        <VersionInfo resourceName="EV-Extract-User-Info" version="SHA-512:4dd3e3a6685a20e73798a992294ea792e79de992f6530a1d305e0d5eff2e68ce81f70adb4f9f794e0271b737bd72c352a79ba4ae7be415dad3abc093ec29e673"/>
+        <VersionInfo resourceName="OA-GenerateAccessToken" version="SHA-512:bffb1dc3934728d1f42f575978ff8a91a4f41dc6a65e4d15571eda09ea463863489a0cf61a704b2b5da5a01fd429e34c3879fe39f4019df527969223d1ed2a68"/>
+        <VersionInfo resourceName="OA-RefreshToken" version="SHA-512:dccc9096709881241e710f9b9155db7c7aab286ebc400703fa3bc4f5a9b306a0ba7950f0f0aa09ae57593cdd839983b5ab72370410236328878efbccaf461feb"/>
+        <VersionInfo resourceName="SC-AuthenticateUser" version="SHA-512:1020b4b948d5fb19148b2300944547f0b0e4a0f2780ec28d77d6c3c3250ee3d8516898d9d75df7c8051b03bff3dd9a4bf038319963bcd47c3c30f3a2f8f7c613"/>
+    </Policies>
+    <ProxyEndpoints>
+        <VersionInfo resourceName="default" version="SHA-512:37a9f95d4590a73944baa4408c6e275fafd363467f552cb8c9c985537e9cae254bcb58e7730d4341921084952067fa0a4afabd4c5e509a9e22b6024e00f17fde"/>
+    </ProxyEndpoints>
+    <Resources/>
+    <SharedFlows/>
+    <TargetEndpoints/>
+</Manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ExtractVariables async="false" continueOnError="false" enabled="true" name="EV-Extract-User-Info">
+    <DisplayName>EV-Extract-User-Info</DisplayName>
+    <Properties/>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <JSONPayload>
+        <Variable name="name">
+            <JSONPath>$.name</JSONPath>
+        </Variable>
+        <Variable name="email">
+            <JSONPath>$.email</JSONPath>
+        </Variable>
+    </JSONPayload>
+    <Source clearPayload="false">authenticationResponse</Source>
+    <VariablePrefix>authRespPrefix</VariablePrefix>
+</ExtractVariables>

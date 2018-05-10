@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ServiceCallout name="SC-AuthenticateUser">
+    <DisplayName>SC-AuthenticateUser</DisplayName>
+    <Request variable="authRequest">
+        <Set>
+            <FormParams>
+                <FormParam name="username">{request.formparam.username}</FormParam>
+                <FormParam name="password">{request.formparam.password}</FormParam>
+            </FormParams>
+            <Verb>POST</Verb>
+        </Set>
+    </Request>
+    <Response>authenticationResponse</Response>
+    <HTTPTargetConnection>
+        <URL>https://egutierrez-eval-test.apigee.net/v1/identity/authenticate</URL>
+    </HTTPTargetConnection>
+</ServiceCallout>

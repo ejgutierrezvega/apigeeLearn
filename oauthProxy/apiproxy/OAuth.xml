@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="OAuth">
+    <Basepaths>/oauth</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1523298274016</CreatedAt>
+    <CreatedBy>egutierrez@esurance.com</CreatedBy>
+    <Description>OAuth 2.0 Proxy</Description>
+    <DisplayName>OAuth</DisplayName>
+    <LastModifiedAt>1523299782664</LastModifiedAt>
+    <LastModifiedBy>egutierrez@esurance.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:b7c71a21aebcaecb7daf7110f9f1c3a4f5705a867f866ffbb6cd82e0fa8b662ecdd745e4b27b88a3a279925bf1eb637b1a7302b482cfee2285fe055c14470309</ManifestVersion>
+    <Policies>
+        <Policy>EV-Extract-User-Info</Policy>
+        <Policy>OA-GenerateAccessToken</Policy>
+        <Policy>OA-RefreshToken</Policy>
+        <Policy>SC-AuthenticateUser</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+</APIProxy>
