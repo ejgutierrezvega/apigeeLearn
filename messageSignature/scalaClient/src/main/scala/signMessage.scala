@@ -13,7 +13,7 @@ object signMessage extends App {
   //Get access token
   /*
   val tokenUrl = "https://egutierrez-eval-test.apigee.net/oauth/accesstoken"
-  val base64ClientSecret = "d2dqN29WRlNQNm40QUZwN2JUcmczRVNDWVJVdkFOM0Q6R0RCM0JNelZTTUxiZkk2Rw=="
+  val base64ClientSecret = ""
   val resultToken : HttpResponse[String] = Http(tokenUrl)
     .header("Content-Type", "application/x-www-form-urlencoded")
     .header("Authorization", s"Basic ${base64ClientSecret}")
@@ -35,16 +35,16 @@ object signMessage extends App {
   formatUTC.setTimeZone(TimeZone.getTimeZone("UTC"));
   formatDateUTC.setTimeZone(TimeZone.getTimeZone("UTC"));
 
-  val clientId : String = "rp7iUCJopsoADM7X6yzQm3eNNvoJ8lGe"
-  val secretKey : String = "7yUbYTcc0c1IcwGW"
+  val clientId : String = ""
+  val secretKey : String = ""
   val requestDate : String = formatDateUTC.format(today)
   val requestDateFull : String = formatUTC.format(today)
   val newLineCharacter : String = "\n"
   val serviceName : String = "products-signature"
   val httpMethod : String = "GET"
-  val completeUrl: String = "https://devapi.esurance.com/products-signature/products"
+  val completeUrl: String = "https://egutierrez-eval-test.apigee.net/products-signature/products"
   val headers  = Map("Content-Type" -> "application/json",
-    "host" -> "esurance-preprod-dev.apigee.net",
+    "host" -> "egutierrez-eval-test.apigee.net",
     "date" -> requestDateFull,
     "Bearer" -> token
   )
